@@ -1,0 +1,64 @@
+{% extends 'posts/layout.html' %}
+
+{% block content %}
+
+<h1 class="center-align red lighten-3">{{title}}</h1>
+<ul class="collection">
+    {% for post in posts %}
+        <li class="collection-item"><a href="/posts/details/{{post.id}}">{{post.title}}</a></li>
+    {% endfor %}
+</ul>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mollis cursus ligula. 
+    Praesent ut enim et dui bibendum fermentum eget vitae nunc. In diam velit, fringilla ut erat a, molestie ullamcorper libero. 
+    Vestibulum ipsum ipsum, rutrum sit amet mauris non, ornare vestibulum metus.
+    Sed eu ex egestas, tempus mauris vitae, eleifend purus. Donec ut orci congue, dapibus odio sit amet, volutpat ligula.
+    Sed tempus ornare massa, sit amet semper tellus congue quis. Duis iaculis est odio, id convallis nibh consequat id.
+</p>
+<br>
+<p>
+    Phasellus at nunc sed purus posuere rhoncus tincidunt ut elit. Aenean et pretium augue. 
+    Pellentesque interdum varius justo, vel rhoncus erat viverra vitae. 
+    Aenean non justo sit amet nisl sagittis ornare et posuere eros. 
+    Suspendisse ac augue consectetur, consectetur nisl vitae, lobortis orci. 
+    Morbi magna lacus, facilisis sed fermentum eu, maximus nec libero. Curabitur laoreet magna dolor. 
+    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+    Pellentesque consequat eros sed risus mollis semper. Cras eu massa mattis, sagittis ex quis, sollicitudin dui. 
+    Fusce eget feugiat neque. Phasellus fermentum malesuada lacinia. 
+    Duis urna lorem, vestibulum ac pretium egestas, tristique ut turpis. 
+    Integer blandit ut nibh ac tincidunt. Quisque fringilla tortor ut quam iaculis iaculis.
+</p>
+<br>
+<p>
+    Vestibulum vehicula tincidunt ultrices. Donec eu varius turpis.
+    Duis lectus mi, suscipit id ligula eget, semper gravida dolor.
+    Nulla varius tellus eget massa maximus luctus.
+    Maecenas non est scelerisque, auctor magna sit amet, egestas odio. 
+    Aenean tempor quis felis in congue. Aenean at interdum eros. 
+    Mauris facilisis est sit amet ex aliquet fringilla. 
+    Vivamus sodales massa ut rhoncus iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    In nibh elit, condimentum eget leo eu, ullamcorper mollis ex. Fusce vitae fermentum leo.  
+</p>
+<br>
+<p>
+    Morbi tristique metus non diam tempor pretium. Vestibulum facilisis, est id condimentum viverra,
+    nisi neque sagittis lorem, sed maximus nisi odio vel dolor. Curabitur at ipsum ultrices, 
+    dignissim velit at, finibus quam. Quisque at euismod risus, non finibus est. Maecenas ac tortor vehicula,
+    faucibus libero id, accumsan dui. Etiam interdum sit amet sapien eget pellentesque.
+    Etiam condimentum porttitor tempor. Cras dignissim urna ac fermentum placerat.
+</p>
+<br>
+<p>
+    Mauris et odio nibh. In ut tortor congue, mollis mauris vitae, placerat dui.
+    Pellentesque tempor sit amet tellus laoreet varius. Integer dignissim in lorem et varius. 
+    Donec sed lacus sed leo aliquet fermentum ut porttitor sapien. Fusce nisi nisl,
+    tempus sit amet magna a, fermentum rhoncus purus. Vivamus eget malesuada ex, 
+    sit amet molestie enim. Aliquam sed placerat tortor. Nunc vitae enim tortor. 
+    Sed blandit commodo nisi, pulvinar gravida nisi dictum non. Vestibulum et hendrerit turpis. 
+    Sed hendrerit mi non mi commodo, non dapibus orci sagittis. Vestibulum venenatis arcu quis sodales euismod. 
+    Suspendisse egestas turpis non quam malesuada fringilla. Nam scelerisque nisl ullamcorper,
+    consectetur lorem id, condimentum augue. Maecenas vulputate odio in odio venenatis commodo.
+</p>
+
+{% endblock %}
